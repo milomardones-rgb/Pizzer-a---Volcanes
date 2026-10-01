@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pizzería Volcanes — Transferencia</title>
+<style>
+body{margin:0;background:#f7f7f7;font-family:Arial,sans-serif;color:#222}
+.card{max-width:430px;margin:0 auto;min-height:100vh;background:white;padding:28px 22px;box-sizing:border-box}
+h1{text-align:center;margin:5px 0 8px;font-size:27px}
+.sub{text-align:center;color:#666;margin-bottom:28px}
+.item{border:1px solid #ddd;border-radius:14px;padding:14px;margin:10px 0}
+.label{font-size:12px;color:#777;text-transform:uppercase}
+.value{font-size:18px;font-weight:700;margin-top:5px;word-break:break-word}
+button{float:right;margin-top:-30px;border:0;border-radius:9px;padding:8px 12px;background:#222;color:#fff;font-weight:700}
+.note{text-align:center;margin-top:24px;color:#666;font-size:13px}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>🍕 Pizzería Volcanes</h1>
+<div class="sub">Datos para transferencia</div>
+
+<div class="item"><div class="label">Titular</div><div class="value" id="titular">PASCAL PEREDA</div><button onclick="copyText('titular')">COPIAR</button></div>
+<div class="item"><div class="label">RUT</div><div class="value" id="rut">17.517.168-1</div><button onclick="copyText('rut')">COPIAR</button></div>
+<div class="item"><div class="label">Banco</div><div class="value" id="banco">Banco prepago Tenpo</div><button onclick="copyText('banco')">COPIAR</button></div>
+<div class="item"><div class="label">Tipo de cuenta</div><div class="value" id="tipo">Cuenta Vista</div><button onclick="copyText('tipo')">COPIAR</button></div>
+<div class="item"><div class="label">N° de cuenta</div><div class="value" id="cuenta">111117517168</div><button onclick="copyText('cuenta')">COPIAR</button></div>
+<div class="item"><div class="label">Correo</div><div class="value" id="correo">pascal.pereda@gmail.com</div><button onclick="copyText('correo')">COPIAR</button></div>
+
+<div class="note">Verifica el nombre y el monto antes de transferir.</div>
+</div>
+<script>
+function copyText(id){
+ const text=document.getElementById(id).innerText;
+ navigator.clipboard.writeText(text).then(()=>alert('Copiado: '+text));
+}
+</script>
+</body>
+</html>
