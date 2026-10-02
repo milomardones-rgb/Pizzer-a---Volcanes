@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pizzería Volcanes — Menú</title>
+<style>
+:root{--green:#25b51b;--dark:#111;--cream:#f7f4ed;--muted:#777}
+*{box-sizing:border-box}
+body{margin:0;background:#111;font-family:Arial,Helvetica,sans-serif;color:#171717}
+.wrap{max-width:760px;margin:auto;background:var(--cream);min-height:100vh}
+header{background:#111;color:#fff;text-align:center;padding:28px 18px 24px;border-bottom:4px solid var(--green)}
+.logo{font-family:Georgia,serif;letter-spacing:4px;font-size:30px;font-weight:700}
+.sub{margin-top:7px;font-size:13px;letter-spacing:2px;color:#ddd}
+.note{font-size:12px;letter-spacing:1px;margin-top:14px;color:#ddd}
+.content{padding:20px 16px 36px}
+.section-title{font-family:Georgia,serif;text-align:center;letter-spacing:3px;margin:8px 0 18px;font-size:22px}
+.pizza{background:#fff;border-radius:14px;padding:15px 14px;margin:10px 0;box-shadow:0 2px 8px #00000010}
+.row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.name{font-family:Georgia,serif;font-weight:700;letter-spacing:2px;font-size:16px}
+.desc{font-size:13px;color:#666;margin-top:5px;line-height:1.35}
+.prices{white-space:nowrap;text-align:right;font-weight:700;font-size:13px}
+.prices small{display:block;color:#888;font-weight:500;margin-bottom:4px}
+.feature{border:2px solid var(--green)}
+.feature .name{color:#176d17}
+.promo{margin:24px 0;padding:18px;text-align:center;background:#fff;border-radius:14px;border:2px solid #d84c43}
+.promo b{display:block;color:#c83d36;letter-spacing:2px;font-size:17px}
+.promo strong{display:block;font-family:Georgia,serif;font-size:25px;margin-top:5px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;font-size:13px}
+th{background:#222;color:#fff;padding:11px 8px}
+td{padding:9px 8px;border-bottom:1px solid #eee}
+td:nth-child(n+2),th:nth-child(n+2){text-align:right}
+.ing-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+footer{text-align:center;padding:20px;color:#888;font-size:12px}
+@media(max-width:520px){
+ .logo{font-size:25px}.content{padding:16px 11px}
+ .name{font-size:14px}.desc{font-size:12px}.prices{font-size:12px}
+ .section-title{font-size:19px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo">PIZZERÍA VOLCANES</div>
+  <div class="sub">MENÚ · PIZZA MEDIANA 32 CMS · PIZZA FAMILIAR 36 CMS</div>
+  <div class="note">TODAS VIENEN CON BASE DE SALSA DE TOMATES, QUESO Y ORÉGANO</div>
+</header>
+
+<main class="content">
+<h2 class="section-title">PIZZAS</h2>
+
+<div class="pizza feature"><div class="row"><div><div class="name">RES MECHADA</div><div class="desc">Carne mechada, morrón, choclo.</div></div><div class="prices"><small>MEDIANA · FAMILIAR</small>$10.000 · $12.500</div></div></div>
+
+<div class="pizza"><div class="row"><div><div class="name">MARGARITA</div><div class="desc">Tomate, albahaca y oliva.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">CALABRESA</div><div class="desc">Salame, tomates y aceitunas.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">HAWAIANA</div><div class="desc">Jamón y piña.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">NAPOLITANA</div><div class="desc">Jamón, tomates y aceitunas.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">MUZZA</div><div class="desc">Mozzarella x 2, orégano y oliva.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">POLLONA</div><div class="desc">Pollo, choclo, champiñón.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">POLLO BBQ</div><div class="desc">Pollo barbecue, cebolla y champiñón.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">SALTEÑA</div><div class="desc">Jamón crudo, rúcula.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">RÚSTICA</div><div class="desc">Tocino, cebolla morada, pepinillo.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">CAPRICHOSA</div><div class="desc">Jamón, salame.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">DOBLE SALAME</div><div class="desc">Salame x 2.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">VEGETARIANA</div><div class="desc">3 vegetales a elección.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+<div class="pizza"><div class="row"><div><div class="name">DOBLE PEPPERONI</div><div class="desc">Pepperoni americano x 2.</div></div><div class="prices">$9.000 · $11.000</div></div></div>
+
+<div class="promo"><b>PROMOCIÓN · 2 PIZZAS MEDIANAS</b><strong>desde $16.000</strong></div>
+
+<h2 class="section-title">INGREDIENTES EXTRA</h2>
+<div class="ing-grid">
+<table><thead><tr><th>Ingrediente</th><th>Med.</th><th>Fam.</th></tr></thead><tbody>
+<tr><td>Mozzarella</td><td>$2.000</td><td>$3.000</td></tr>
+<tr><td>Camarón</td><td>$3.500</td><td>$4.000</td></tr>
+<tr><td>Jamón crudo</td><td>$1.500</td><td>$2.500</td></tr>
+<tr><td>Mechada</td><td>$1.500</td><td>$2.500</td></tr>
+<tr><td>Pollo</td><td>$1.500</td><td>$2.500</td></tr>
+<tr><td>Tocino</td><td>$1.500</td><td>$2.500</td></tr>
+<tr><td>Salame</td><td>$1.500</td><td>$2.500</td></tr>
+<tr><td>Jamón</td><td>$1.500</td><td>$2.500</td></tr>
+<tr><td>Pepperoni</td><td>$1.500</td><td>$2.500</td></tr>
+</tbody></table>
+<table><thead><tr><th>Ingrediente</th><th>Med.</th><th>Fam.</th></tr></thead><tbody>
+<tr><td>Aceituna</td><td>$1.000</td><td>$1.500</td></tr>
+<tr><td>Cebolla</td><td>$1.000</td><td>$1.500</td></tr>
+<tr><td>Morrón</td><td>$1.000</td><td>$1.500</td></tr>
+<tr><td>Choclo</td><td>$1.000</td><td>$1.500</td></tr>
+<tr><td>Champiñón</td><td>$1.000</td><td>$1.500</td></tr>
+<tr><td>Tomate</td><td>$1.000</td><td>$1.500</td></tr>
+<tr><td>Piña</td><td>$1.000</td><td>$1.500</td></tr>
+<tr><td>Pepinillos</td><td>$1.000</td><td>$1.500</td></tr>
+<tr><td>Rúcula</td><td>$1.000</td><td>$1.500</td></tr>
+</tbody></table>
+</div>
+</main>
+<footer>Pizzería Volcanes</footer>
+</div>
+</body>
+</html>
